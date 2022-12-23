@@ -20,8 +20,8 @@ bool xz = true;
 while (xz)
 {
     try { tmp = Convert.ToInt32(ReadLine()); }
-    catch (Exception e) { WriteLine("ты написал хуйню!!!!"); tmp = 0; }
-    if (tmp <= 0 || tmp > 100) { WriteLine("Пощёл на фиг со своими цифрами!!! ГЫ ГЫ ГЫ"); xz = true; }
+    catch (Exception e) { WriteLine("ты написал не то!!!!"); tmp = 0; }
+    if (tmp <= 0 || tmp > 100) { WriteLine("на фиг со своими цифрами!!! ГЫ ГЫ ГЫ"); xz = true; }
     else if ((tmp % 5) == 0 && (tmp % 3) == 0) { WriteLine("Fizz Buzz"); /*xz = false;*/ }
     else if ((tmp % 3) == 0) { WriteLine("Fizz"); /*xz = false;*/ }
     else if ((tmp % 5) == 0) { WriteLine("Buzz"); }
@@ -84,12 +84,12 @@ do
     if (Hight > chislo.Length - 1) { WriteLine("Ошибка ввода!! : в строке нету столько символов"); reset = true; }
 } while (reset);
 char[] char_arr = chislo.ToCharArray();
-char tmp = chislo[Low];
+char tmps = chislo[Low];
 char_arr[Low] = char_arr[Hight];
-char_arr[Hight] = tmp;
-string xz = new string(char_arr);
+char_arr[Hight] = tmps;
+string xxz = new string(char_arr);
 //WriteLine(xz);
-WriteLine(Convert.ToInt32(xz));
+WriteLine(Convert.ToInt32(xxz));
 
 ////////////////Console.WriteLine("Введите число");
 ////////////////int x = Convert.ToInt32(Console.ReadLine());
